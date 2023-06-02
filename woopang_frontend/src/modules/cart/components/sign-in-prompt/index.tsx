@@ -5,9 +5,9 @@ const SignInPrompt = () => {
   return (
     <div className="bg-white flex items-start justify-between">
       <div>
-        <h2 className="text-xl-semi">Already have an account?</h2>
+        <h2 className="text-xl-semi">이미 계정이 존재하시나요?</h2>
         <p className="text-base-regular text-gray-700 mt-2">
-          Sign in for a better experience.
+          로그인하여 WooPang의 모든 서비스를 이용해보세요.
         </p>
       </div>
       <div>

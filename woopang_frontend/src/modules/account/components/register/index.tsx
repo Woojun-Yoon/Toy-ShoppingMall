@@ -49,10 +49,10 @@ const Register = () => {
           <Spinner size={24} />
         </div>
       )}
-      <h1 className="text-large-semi uppercase mb-6">Become a Acme Member</h1>
+      <h1 className="text-large-semi uppercase mb-6">WooPang</h1>
+      <h2 className="text-large-semi uppercase mb-6">회원가입</h2>
       <p className="text-center text-base-regular text-gray-700 mb-4">
-        Create your Acme Member profile, and get access to an enhanced shopping
-        experience.
+        회원가입을 통해서 WooPang의 다양한 서비스를 이용해보세요.
       </p>
       <form className="w-full flex flex-col" onSubmit={onSubmit}>
         <div className="flex flex-col w-full gap-y-2">
@@ -98,27 +98,26 @@ const Register = () => {
           </div>
         )}
         <span className="text-center text-gray-700 text-small-regular mt-6">
-          By creating an account, you agree to Acme&apos;s{" "}
-          <Link href="/content/privacy-policy">
-            <a className="underline">Privacy Policy</a>
-          </Link>{" "}
+          By creating an account, you agree to WooPang&apos;s{" "}
+          {/* <Link href="/content/privacy-policy"> */}
+            <a className="underline">Privacy Policy </a>
+          {/* </Link>{" "} */}
           and{" "}
-          <Link href="/content/terms-of-use">
+          {/* <Link href="/content/terms-of-use"> */}
             <a className="underline">Terms of Use</a>
-          </Link>
+          {/* </Link> */}
           .
         </span>
         <Button className="mt-6">Join</Button>
       </form>
       <span className="text-center text-gray-700 text-small-regular mt-6">
-        Already a member?{" "}
+        이미 계정이 있나요?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
         >
-          Sign in
+          로그인
         </button>
-        .
       </span>
     </div>
   )

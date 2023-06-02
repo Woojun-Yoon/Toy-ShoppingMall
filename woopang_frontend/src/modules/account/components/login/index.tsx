@@ -45,9 +45,9 @@ const Login = () => {
           <Spinner size={24} />
         </div>
       )}
-      <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
+      <h1 className="text-large-semi uppercase mb-6">안녕하세요!</h1>
       <p className="text-center text-base-regular text-gray-700 mb-8">
-        Sign in to access an enhanced shopping experience.
+        로그인을 통해서 WooPang을 이용해보세요.
       </p>
       <form className="w-full" onSubmit={onSubmit}>
         <div className="flex flex-col w-full gap-y-2">
@@ -75,14 +75,13 @@ const Login = () => {
         <Button className="mt-6">Enter</Button>
       </form>
       <span className="text-center text-gray-700 text-small-regular mt-6">
-        Not a member?{" "}
+        계정이 없으신가요?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}
           className="underline"
         >
-          Join us
+          회원가입
         </button>
-        .
       </span>
     </div>
   )

@@ -32,9 +32,9 @@ const OrderOverview = () => {
 
   return (
     <div className="w-full flex flex-col items-center gap-y-4">
-      <h2 className="text-large-semi">Nothing to see here</h2>
+      <h2 className="text-large-semi">주문하신 제품이 없습니다!</h2>
       <p className="text-base-regular">
-        You don&apos;t have any orders yet, let us change that {":)"}
+        주문하신 제품이 없습니다. 밑의 링크를 통해서 제품을 구매해 주시기 바랍니다 {":)"}
       </p>
       <div className="mt-4">
         <Link href="/" passHref>

@@ -53,10 +53,10 @@ const RelatedProducts = ({ product }: RelatedProductsProps) => {
     <div className="product-page-constraint">
       <div className="flex flex-col items-center text-center mb-16">
         <span className="text-base-regular text-gray-600 mb-6">
-          Related products
+          관련 상품
         </span>
         <p className="text-2xl-regular text-gray-900 max-w-lg">
-          You might also want to check out these products.
+          아래 제품들을 추천합니다!
         </p>
       </div>
 

@@ -15,11 +15,9 @@ const ProfileTemplate = () => {
   return (
     <div className="w-full">
       <div className="mb-8 flex flex-col gap-y-4">
-        <h1 className="text-2xl-semi">Profile</h1>
+        <h1 className="text-2xl-semi">프로필</h1>
         <p className="text-base-regular">
-          View and update your profile information, including your name, email,
-          and phone number. You can also update your billing address, or change
-          your password.
+          프로필을 확인하고 변경할 수 있습니다.
         </p>
       </div>
       <div className="flex flex-col gap-y-8 w-full">

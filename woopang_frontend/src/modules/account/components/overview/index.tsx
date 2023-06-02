@@ -16,7 +16,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
     <div>
       <div className="small:hidden">
         <div className="text-xl-semi mb-4 px-8">
-          Hello {customer?.first_name}
+          안녕하세요 {customer?.first_name} 회원님!
         </div>
         <div className="text-base-regular">
           <ul>
@@ -25,7 +25,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 <a className="flex items-center justify-between py-4 border-b border-gray-200 px-8">
                   <div className="flex items-center gap-x-2">
                     <User size={16} />
-                    <span>Profile</span>
+                    <span>프로필</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
                 </a>
@@ -36,7 +36,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 <a className="flex items-center justify-between py-4 border-b border-gray-200 px-8">
                   <div className="flex items-center gap-x-2">
                     <MapPin size={16} />
-                    <span>Addresses</span>
+                    <span>주소 관리</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
                 </a>
@@ -47,7 +47,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                 <a className="flex items-center justify-between py-4 border-b border-gray-200 px-8">
                   <div className="flex items-center gap-x-2">
                     <Package size={16} />
-                    <span>Orders</span>
+                    <span>주문 목록</span>
                   </div>
                   <ChevronDown className="transform -rotate-90" />
                 </a>
@@ -69,7 +69,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
           <div className="flex flex-col gap-y-4 h-full col-span-1 row-span-2 flex-1">
             <div className="flex items-start gap-x-16 mb-6">
               <div className="flex flex-col gap-y-4">
-                <h3 className="text-large-semi">Profile</h3>
+                <h3 className="text-large-semi">프로필</h3>
                 <div className="flex items-end gap-x-2">
                   <span className="text-3xl-semi leading-none">
                     {getProfileCompletion(customer)}%

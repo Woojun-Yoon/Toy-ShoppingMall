@@ -19,7 +19,7 @@ const Addresses = () => {
         <div className="bg-gray-900 w-8 h-8 rounded-full text-white flex justify-center items-center text-sm">
           1
         </div>
-        <h2>Shipping address</h2>
+        <h2>배송지 정보 입력</h2>
       </div>
       {isEdit ? (
         <div className="px-8 pb-8">
@@ -37,7 +37,7 @@ const Addresses = () => {
                 <div className="bg-gray-900 w-8 h-8 rounded-full text-white flex justify-center items-center font-mono text-sm">
                   2
                 </div>
-                <h2>Billing address</h2>
+                <h2>청구서 발송지</h2>
               </div>
               <BillingAddress />
             </div>

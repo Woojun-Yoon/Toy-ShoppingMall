@@ -38,7 +38,7 @@ const CartDropdown = () => {
             className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-white border-x border-b border-gray-200 w-[382px] text-gray-900"
           >
             <div className="p-4 flex items-center justify-center">
-              <h3 className="text-large-semi">Shopping Bag</h3>
+              <h3 className="text-large-semi">장바구니</h3>
             </div>
             {cart && items?.length ? (
               <>
@@ -67,7 +67,7 @@ const CartDropdown = () => {
                                   </Link>
                                 </h3>
                                 <LineItemOptions variant={item.variant} />
-                                <span>Quantity: {item.quantity}</span>
+                                <span>개수: {item.quantity}</span>
                               </div>
                               <div className="flex justify-end">
                                 <LineItemPrice
@@ -96,7 +96,7 @@ const CartDropdown = () => {
                 <div className="p-4 flex flex-col gap-y-4 text-small-regular">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-700 font-semibold">
-                      Subtotal{" "}
+                      총 금액{" "}
                       <span className="font-normal">(incl. taxes)</span>
                     </span>
                     <span className="text-large-semi">
@@ -109,7 +109,7 @@ const CartDropdown = () => {
                   </div>
                   <Link href="/cart" passHref>
                     <a>
-                      <Button>Go to bag</Button>
+                      <Button>장바구니로 돌아가기</Button>
                     </a>
                   </Link>
                 </div>
@@ -120,11 +120,11 @@ const CartDropdown = () => {
                   <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
                     <span>0</span>
                   </div>
-                  <span>Your shopping bag is empty.</span>
+                  <span>장바구니가 비어있습니다!</span>
                   <div>
                     <Link href="/store">
                       <a>
-                        <span className="sr-only">Go to all products page</span>
+                        <span className="sr-only">제품 페이지로 이동</span>
                         <Button onClick={close}>Explore products</Button>
                       </a>
                     </Link>

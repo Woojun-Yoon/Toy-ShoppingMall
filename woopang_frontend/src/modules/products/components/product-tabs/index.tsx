@@ -15,11 +15,11 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
   const tabs = useMemo(() => {
     return [
       {
-        label: "Product Information",
+        label: "상품 정보",
         component: <ProductInfoTab product={product} />,
       },
       {
-        label: "Shipping & Returns",
+        label: "배송, 반품 정책",
         component: <ShippingInfoTab />,
       },
     ]
@@ -106,31 +106,28 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <FastDelivery />
           <div>
-            <span className="font-semibold">Fast delivery</span>
+            <span className="font-semibold">빠른 배송</span>
             <p className="max-w-sm">
-              Your package will arrive in 3-5 business days at your pick up
-              location or in the comfort of your home.
+              주문 후 1~2일 내에 배송됩니다. (주말 및 공휴일 제외)
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Refresh />
           <div>
-            <span className="font-semibold">Simple exchanges</span>
+            <span className="font-semibold">제품 교환 정책</span>
             <p className="max-w-sm">
-              Is the fit not quite right? No worries - we&apos;ll exchange your
-              product for a new one.
+              상품을 교환하고 싶으시다면, 상품을 반품하시고 환불을 받으신 후
+              다시 주문해주세요.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
-            <span className="font-semibold">Easy returns</span>
+            <span className="font-semibold">제품 반품 정책</span>
             <p className="max-w-sm">
-              Just return your product and we&apos;ll refund your money. No
-              questions asked – we&apos;ll do our best to make sure your return
-              is hassle-free.
+              상품을 반품하고 싶으시다면, 14일 이내에 반품 신청을 해주세요.
             </p>
           </div>
         </div>

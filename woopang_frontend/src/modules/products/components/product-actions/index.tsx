@@ -84,7 +84,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
       </div>
 
       <Button onClick={addToCart}>
-        {!inStock ? "Out of stock" : "Add to cart"}
+        {!inStock ? "재고가 없습니다!" : "장바구니에 추가"}
       </Button>
     </div>
   )
